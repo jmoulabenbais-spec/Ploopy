@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(254, 254, 254);
+
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background-color: rgb(181, 216, 245);
+}
+
+
+.logo {
+    height: 70px;
+    width: auto;
+    border-radius: 20px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+nav {
+    margin-left: auto;
+    display: flex;
+    padding-right: 5%;
+    gap: 12px;
+
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 6px 30px;
+    border-radius: 4px;
+
+}
+
+.activ {
+    background: rgba(112, 112, 112, 0.114);
+
+    color: #3b4db2;
+}
+
+nav a:hover {
+    background: rgba(112, 112, 112, 0.114);
+
+    color: #3b4db2;
+
+}
+
+a {
+
+    position: relative;
+}
+
+a::before {
+    content: ' ';
+    top: 0;
+    left: 50%;
+    position: absolute;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+    width: 0px;
+    /*كي يقلع يكون مايبانش*/
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in-out;
+}
+
+h1 {
+    margin-left: 20PX;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 75px 0px;
+    text-align: center;
+
+}
+
+.intro {
+    padding: 14PX ;
+   
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 10PX;
+    border: 2px solid #000;
+    background-color: rgb(210, 210, 210);
+}
+button {
+    background-color: #3b4db2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
